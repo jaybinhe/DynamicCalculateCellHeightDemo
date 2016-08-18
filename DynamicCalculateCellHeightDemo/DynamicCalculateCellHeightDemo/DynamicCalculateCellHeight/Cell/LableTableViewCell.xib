@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LableTableViewCell" id="KGk-i7-Jjw" customClass="LableTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo1" translatesAutoresizingMaskIntoConstraints="NO" id="NyO-zG-vDH">
+                        <rect key="frame" x="80" y="10" width="160" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="afd-GX-581"/>
+                            <constraint firstAttribute="width" constant="160" id="e49-GX-Zaq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动态计算cell的高度" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXW-Yc-INb">
+                        <rect key="frame" x="16" y="55" width="288" height="15.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MXW-Yc-INb" firstAttribute="top" secondItem="NyO-zG-vDH" secondAttribute="bottom" id="6Wm-f6-u8c"/>
+                    <constraint firstItem="MXW-Yc-INb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Aez-eq-Ogl"/>
+                    <constraint firstItem="MXW-Yc-INb" firstAttribute="top" secondItem="NyO-zG-vDH" secondAttribute="bottom" constant="5" id="FqP-4b-57m"/>
+                    <constraint firstItem="NyO-zG-vDH" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="SyY-8t-AXO"/>
+                    <constraint firstAttribute="trailing" secondItem="MXW-Yc-INb" secondAttribute="trailing" constant="16" id="TUE-2m-3yJ"/>
+                    <constraint firstAttribute="bottom" secondItem="MXW-Yc-INb" secondAttribute="bottom" constant="10" id="V8g-ab-Ua4"/>
+                    <constraint firstItem="NyO-zG-vDH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="agt-Xx-DBD"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6Wm-f6-u8c"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLbl" destination="MXW-Yc-INb" id="vB9-g3-RG3"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="334.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="demo1" width="1920" height="1280"/>
+    </resources>
+</document>
